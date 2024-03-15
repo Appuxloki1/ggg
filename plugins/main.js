@@ -20,7 +20,6 @@ const {
 	sendSticker,
 	takeExif,
 	sendList,
-	getvv,
 	findPlugin,
         sendPlugin,
         extractUrlFromMessage,
@@ -115,15 +114,6 @@ System({
 	type: "converter",
 }, async (message, match, m) => {
 	await sendUrl(message, match, m)
-});
-
-System({
-    pattern: "vv",
-    fromMe: true,
-    desc: "get view ones message",
-    type: "user",
-}, async (message, match, m) => {
-        await getvv(message, match, m);
 });
 
 
